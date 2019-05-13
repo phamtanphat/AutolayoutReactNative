@@ -9,8 +9,8 @@ export default class Myimage extends PureComponent {
         // width - ?
       <View>
         <Image
-            style={{width : width , height : width * 1080 / 1000}}
-            source={require('../image/background.jpg')}
+            style={{width : 100 , height : 100}}    
+            source={{uri : 'https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'}}
         >
         </Image>
       </View>
