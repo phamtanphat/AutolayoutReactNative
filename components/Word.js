@@ -13,15 +13,12 @@ export default class Word extends PureComponent {
     // 1cot  minh nhin thay => 1 dong (chieu cao maximum)(row)
      //Direction : column => justifyContent (2 dua cung nhin` ve 1 huong) => anh huong ve chieu cao , alignItems (nhin nguoc) => nhin ve chieu ngang
     return (
-      <View style={{backgroundColor : 'red' , flex : 1 , flexDirection : 'column' }}>
-        <View style={{flexDirection : 'row' , justifyContent : 'space-between' , alignItems : 'flex-start' , flex : 0.5}}>
-            <Text style={{backgroundColor : 'black' , color : 'white'}}>One</Text>
-            <Text style={{backgroundColor : 'green' , color : 'white'}}>Two</Text>
-        </View>
-        <View style={{flexDirection : 'row' , justifyContent : 'space-between' , alignItems : 'flex-end' , flex : 0.5}}>
-            <Text style={{backgroundColor : 'yellow' , color : 'white'}}>Three</Text>
-            <Text style={{backgroundColor : 'black' , color : 'white'}}>Four</Text>
-        </View>
+      <View style={{ flex : 1 , flexDirection : 'column' }}>
+            <Text style={{backgroundColor : 'orange' , textAlign : 'center' , textAlignVertical : 'center'}}>1</Text>
+            <Text style={{backgroundColor : 'firebrick', textAlign : 'center' , textAlignVertical : 'center'}}>2</Text>
+            <Text style={{backgroundColor : 'gold', textAlign : 'center' , textAlignVertical : 'center'}}>3</Text>
+            <Text style={{backgroundColor : 'green', textAlign : 'center' , textAlignVertical : 'center'}}>4</Text>
+        
        
       </View>
     )
