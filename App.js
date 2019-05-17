@@ -7,18 +7,20 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View , SafeAreaView} from 'react-native';
 import Word from './components/Word';
 import Myimage from './components/Myimage';
 import MyFlatlist from './components/MyFlatlist';
-MyFlatlist
+
+import {ScreenA , ScreenB} from './components/UseStateHooks';
 
 export default class App extends Component{
   render() {
     return (
-      <View style={{ flex : 1}}>
-        <MyFlatlist />
-      </View>
+      <SafeAreaView style={{ flex : 1 , justifyContent : 'center' , alignSelf : 'center'}}>
+        <ScreenA />
+        <ScreenB />
+      </SafeAreaView>
     );
   }
 }
